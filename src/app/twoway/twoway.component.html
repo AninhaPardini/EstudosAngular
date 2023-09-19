@@ -1,0 +1,7 @@
+<h2>Two Way</h2>
+<input type="text" [value]="placeholder" (input)="placeholder = $any($event.target).value">
+<p>{{ placeholder }}</p>
+
+
+<input [(ngModel)]="placepass" #ctrl="ngModel" required>
+<p [style.color]="color">{{ placepass }}</p>
