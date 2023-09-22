@@ -1,0 +1,23 @@
+<p>switch-component works!</p>
+<div [ngSwitch]="menuType">
+  <div *ngSwitchDefault>
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar cartão</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'admin'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar cartão</li>
+      <li>Gerenciar Usuários</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'superuser'">
+    <ul>
+      <li>Editar Perfil</li>
+      <li>Adicionar cartão</li>
+      <li>Gerenciar Admins</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.btn-primary {
+  background-color: rgb(101, 227, 107);
+  border-color: rgba(128, 128, 128, 0);
+  color: rgb(37, 97, 38);
+  border-radius: 8px;
+
+}
+
+.btn-primary:hover {
+  background-color: white;
+  border-color: grey;
+  color: grey;
+}
+
+.btn-secondary {
+  background-color: grey;
+  border-color: grey;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  border-color: grey;
+  color: grey;
+
+}

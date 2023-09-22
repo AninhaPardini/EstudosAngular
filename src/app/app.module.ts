@@ -6,12 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardNewsComponent } from './card-news/card-news.component';
 import { TwowayComponent } from './twoway/twoway.component';
+import { CheckSampleComponent } from './check-sample/check-sample.component';
+import { ForComponentComponent } from './for-component/for-component.component';
+import { SwitchComponentComponent } from './switch-component/switch-component.component';
+import { AttributeComponentComponent } from './attribute-component/attribute-component.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CardNewsComponent,
-    TwowayComponent
+    TwowayComponent,
+    CheckSampleComponent,
+    ForComponentComponent,
+    SwitchComponentComponent,
+    AttributeComponentComponent,
+
   ],
   imports: [
     BrowserModule,

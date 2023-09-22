@@ -1,0 +1,27 @@
+<h2>Lista de Compras: (ngModel)</h2>
+
+<input type="text" [(ngModel)]="item">
+<br>
+<input type="number" [(ngModel)]="valor">
+<!-- <p>{{ item }} - {{ valor }}</p> -->
+<button (click)="adicionarItem()">Adicionar</button>
+<ul>
+  <li *ngFor="let item of items">{{ item }} - {{ valor }}</li>
+</ul>
+<hr>
+
+<h2>Templates dinâmicos: ngTemplate</h2>
+
+<button (click)="enableBlock(); switchType()" [class]="buttonStyle">{{ tipo }}</button>
+
+<ng-template [ngIf]="isEnableBlock" [class]="cardTemplate">
+  <h3>Template 1</h3>
+  <p>Conteúdo do template 1</p>
+</ng-template>
+
+<ng-template [ngIf]="isEnableBlock" [class]="cardTemplate">
+  <h3>Template 2</h3>
+  <p>Conteúdo do template 2</p>
+</ng-template>
+
+<ng-content select="p"></ng-content>

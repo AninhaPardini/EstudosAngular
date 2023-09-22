@@ -1,2 +1,16 @@
 <app-card-news></app-card-news>
 <app-twoway></app-twoway>
+<hr>
+<h1>Life Cycle</h1>
+<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+<button (click)="disposeCheckSample()">Destroy</button>
+<hr>
+<h2>Usando for (ngFor)</h2>
+<app-for-component></app-for-component>
+<hr>
+<h2>Usando switch (ngSwitch)</h2>
+<app-switch-component></app-switch-component>
+<hr>
+<app-attribute-component>
+  <p>Sou de fora</p>
+</app-attribute-component>

@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
+  isAliveCheckSample: boolean = true;
+
+  disposeCheckSample():void {
+    this.isAliveCheckSample = false;
+  }
+
 }
